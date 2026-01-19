@@ -1,5 +1,4 @@
 site_name: SRE User Guide
-site_url: https://example.com/
 nav:
   - Introduction to SRE: index.md
   - SRE: On-prem_SRE.md
@@ -7,10 +6,11 @@ nav:
   - Definition of common terms used in SRE: Definition_of_common_terms_used_in_SRE.md
   - Roles in SRE: Roles_in_SRE.md
   - Data Storage: Data_Storage.md
-  - Using SRE As a Researcher: As_a_researcher.md
-  - Using SRE As a Data Custodian: As_a_data_custodian.md
-  - Using SRE As a Data Ingress Approver: As_a_data_ingress_approver.md
-  - Using SRE As a Data Egress Approver: As_a_data_egress_approver.md
+  - Using SRE:
+    - As a Researcher: As_a_researcher.md
+    - As a Data Custodian: As_a_data_custodian.md
+    - As a Data Ingress Approver: As_a_data_ingress_approver.md
+    - As a Data Egress Approver: As_a_data_egress_approver.md
 
 
 theme:  
