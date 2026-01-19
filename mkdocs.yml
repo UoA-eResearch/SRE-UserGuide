@@ -3,7 +3,7 @@ nav:
   - Introduction to SRE: index.md
   - SRE: On-prem_SRE.md
   - Pre-requisites for using SRE: Pre-requisites_for_using_SRE.md
-  - Definition of common terms used in SRE: Definition_of_common_terms_used_in_SRE.md
+  - Definition of common terms: Definition_of_common_terms.md
   - Roles in SRE: Roles_in_SRE.md
   - Data Storage: Data_Storage.md
   - Using SRE:
