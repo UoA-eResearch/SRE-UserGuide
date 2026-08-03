@@ -17,7 +17,7 @@ nav:
 theme:  
   name: material
   favicon: img/favicon.png
-  logo: img/logo.png
+  logo: img/uoa-logo.png
   palette:
     primary: custom
   font:
