@@ -29,3 +29,26 @@ figure.full-width {
     --md-primary-fg-color--dark:  #1f2bd4;
   }
   
+.role-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #1a237e;
+    font-size: 0.75rem;
+}
+
+.role-table th,
+.role-table td {
+    border: 1px solid #1a237e;
+    padding: 0.35rem 0.55rem;
+    text-align: left;
+}
+
+.role-table thead th {
+    background: #10165c;
+    color: white;
+    font-weight: 700;
+}
+
+.role-table tbody th {
+    font-weight: 700;
+}
