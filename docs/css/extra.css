@@ -52,3 +52,9 @@ figure.full-width {
 .role-table tbody th {
     font-weight: 700;
 }
+
+.callout {
+    border-left: 4px solid #00caef;
+    padding-left: 12px;
+    margin: 0.75rem 0;
+}
