@@ -1,9 +1,10 @@
-# Introduction to SRE 
-Secure research environment (SRE) provides a safe, remote computing environment for approved researchers to work collaboratively and analyse sensitive data augmented with layers of governance and auditing. The data which is brought into SRE and the analysed results which can be derived or exported from the environment is vetted by the authorised research team member to control the access to the sensitive information. Such monitored systems keep data safe while preventing misuse of data. 
+# The Secure Research Environment (SRE) 
+The Secure Research Environment (SRE) is a controlled, virtual platform that allows approved researchers to securely store, access and analyse sensitive research data.
+
+The processes of data entering the SRE (ingress) and leaving the SRE (egress) are governed through role-based approvals, with auditing, and monitoring to meet data governance and security requirements.
 
 
 <figure markdown>
   ![diagram](img/diagram.png)
   <figcaption> </figcaption>
 </figure>
-
