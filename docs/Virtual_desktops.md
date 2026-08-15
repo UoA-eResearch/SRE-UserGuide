@@ -5,7 +5,13 @@ A virtual desktop (or virtual machine, VM) is a virtual version of a computer th
 ## Standard options
 
 <ul>
-    <li>Each project environment has a Management VM and one or more Research VMs.</li>
-    <li>VMs can have Microsoft Windows Server or Linux Operating Systems.</li>
-    <li>A list of standard software available within the project environment can be found here. Other applications may be installed by the SRE team upon request, subject to licensing restrictions.</li>
+    <li>
+        Each project environment has a Management VM and one or more Research VMs.
+    </li>
+    <li>
+        VMs can have Microsoft Windows Server or Linux Operating Systems.
+    </li>
+    <li>
+        A list of standard software available within the project environment can be found here. Other applications may be installed by the SRE team upon request, subject to licensing restrictions.
+    </li>
 </ul>

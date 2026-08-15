@@ -9,29 +9,50 @@ The SRE has enhanced security features to protect project data and is designed t
 ### Multi-tiered security
 
 <ul>
-    <li>Aligned with University security standards</li>
-    <li>Project data is encrypted</li>
-    <li>Auditable data import (ingress), access and export (egress)</li>
-    <li>Each project environment is isolated from each other, as well as from the internet and other University systems, except where needed (e.g., to provide access or to maintain security updates).
-        <div style="border-left: 4px solid #00caef; padding-left: 12px;">
-        SRE users cannot access the internet (unless approved), copy/paste or drag and drop into or out of the project environment, or mount a USB or local drive.
+    <li>
+        Aligned with University security standards
+    </li>
+    <li>
+        Project data is encrypted
+    </li>
+    <li>
+        Auditable data import (ingress), access and export (egress)
+    </li>
+    <li>
+        Each project environment is isolated from each other, as well as from the internet and other University systems, except where needed (e.g., to provide access or to maintain security updates).
+        <div class="callout">
+            SRE users cannot access the internet (unless approved), copy/paste or drag and drop into or out of the project environment, or mount a USB or local drive.
         </div>
     </li>
-    <li>Enhanced session security to protect project data.
-        <li>You will be logged out of the project environment **after 15 mins of inactivity**</li>
-        <li>The VM connection will be closed **after 10 minutes of inactivity**</li>
-        <li>If you have been logged out, you will be prompted to log in and enter two-factor authentication again to continue.</li>
+    <li>
+        Enhanced session security to protect project data.
+        <ul>
+            <li>
+                You will be logged out of the project environment <strong>after 15 mins of inactivity</strong>
+            </li>
+            <li>
+                The VM connection will be closed <strong>after 10 minutes of inactivity</strong>
+            </li>
+            <li>
+                If you have been logged out, you will be prompted to log in and enter two-factor authentication again to continue.
+            </li>
+        </ul>
     </li>
 </ul>
 
 ### Access controls
 
 <ul>
-    <li>Secure web portal access via web browser</li>
-    <li>Access requires two-factor authentication for authorised project team members</li>
-    <li>Role-based controlled access and rights based on project needs
-        <div style="border-left: 4px solid #00caef; padding-left: 12px;">
-        Each role can be held by one or more project team members. A project team member can hold more than one role.
+    <li>
+        Secure web portal access via web browser
+    </li>
+    <li>
+        Access requires two-factor authentication for authorised project team members
+    </li>
+    <li>
+        Role-based controlled access and rights based on project needs
+        <div class="callout">
+            Each role can be held by one or more project team members. A project team member can hold more than one role.
         </div>
     </li>
 </ul>
