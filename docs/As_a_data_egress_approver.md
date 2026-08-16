@@ -1,48 +1,53 @@
 # As a Data Egress Approver
 
-Login into SRE and if needed, change to “Egress approver” role. 
+As an Egress Approver, use Data Egress Requests to check and approve files(s) that a Researcher wants to export from the project environment. 
 
 ## View egress requests 
 
-Upon getting the notification to review an egress request, the user must either log in to SRE environment as an Egress Approver or needs to select and change the role in SRE. 
+<ol>
+  <li>
+    You will receive an email informing you of an Egress Request to approve.
+  </li>
+  <li>
+    Log in to the SRE and, if needed, change to the <strong>Egress Approver</strong> role.
+  </li>
+  <li>
+    Select <strong>Data Egress Requests</strong> from the left-hand project menu on the Project Dashboard.
+  </li>
+  <li>
+    Use the <strong>Management VM</strong> to view and inspect the file(s).
+    <ul>
+      <li>
+        <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations". Select <code>egress-approver > [username]-r (user who made the request).</code>
+      </li>
+      <li>
+        <strong>Linux VM:</strong> Click on the <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>project_data > egress-approver > [username]-r</code> (user who made the request).
+      </li>
+    </ul>
+  </li>
+</ol>
 
-Select Data Egress Request from the screen. 
+## Approve or decline a request 
+
+<ol start="5">
+  <li>
+    Return to <strong>Data Egress Requests</strong> on the Project Dashboard.
+  </li>
+  <li>
+    <strong>Approve</strong> or <strong>Reject</strong> the egress request.
+    <div class="callout">
+      The request State in <strong>Egress request history</strong> will change from <em>pending_approval</em> to <em>completed</em>. The files will be automatically deleted from the staging area following approval or rejection.
+    </div>
+  </li>
+</ol>
+Please get in touch with the researcher if the request is rejected and provide them with advice for the next steps.
 
 <figure markdown>
-  ![egress_7](img/egress_7.PNG)
+  ![file-upload-failure](img/file-upload-failure.jpg)
   <figcaption> </figcaption>
 </figure>
 
-You can see the pending requests by different users waiting to be reviewed. You can use the virtual machine (Egress Approver VM) available to view and evaluate the data that has been requested to be taken out of the project’s SRE
-
 <figure markdown>
-  ![egress_8](img/egress_8.PNG)
+  ![file-upload-failure](img/file-upload-failure.jpg)
   <figcaption> </figcaption>
 </figure>
-
-In the virtual machine, open the File explorer and select “egress-approver” folder under network locations. 
-
-<figure markdown>
-  ![egress_9](img/egress_9.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-From the list of folders, select the user who requested the data egress, and open the requested file (filenames are time-stamped) to inspect the contents.  
-
-## Approve or decline a request
-
-After inspection, go back to the previous main menu (Data Egress Requests) and approve or reject the ingress request, as seen appropriate.  
-
-<figure markdown>
-  ![egress_10](img/egress_10.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-When the request is “approved” or “rejected”, the egress request is removed from the Pending egress requests. On approval, the state of the request changes to “completed” in the Egress request history.  
-
-<figure markdown>
-  ![egress_11](img/egress_11.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Please get in touch with the researcher if the request is rejected and provide them with advice for the next steps. 

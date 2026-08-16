@@ -1,34 +1,52 @@
 # As a Data Ingress Approver 
 
-Login in to SRE and if needed, change to “Ingress approver” role. 
+As an Ingress Approver, use Data Ingress Requests to check and approve files(s) that a Researcher wants to import into the project environment. 
 
 ## View ingress requests 
 
-Upon getting the notification to review an ingress files request, the user must either log in to SRE environment as an Ingress Approver/Data custodian or needs to select and change the role in SRE.  
-
-Select Data Ingress Request from the screen.  
-
-<figure markdown>
-  ![ingress_approver1](img/ingress_approver1.png)
-  <figcaption> </figcaption>
-</figure>
-
-You can see the requests by different users which are waiting to be approved.  You can use the virtual machine available to view and evaluate the data been requested to be brought in. 
-
-<figure markdown>
-  ![ingress_approver2](img/ingress_approver2.png)
-  <figcaption> </figcaption>
-</figure>
-
-In the virtual machine, open the File explorer and select “ingress-approver” folder under network locations. 
-
-<figure markdown>
-  ![ingress_approver_VM_folder](img/ingress_approver_VM_folder.png)
-  <figcaption> </figcaption>
-</figure>
-
-From the list of folders, select the user who requested the ingress, and open the requested file to inspect the contents.  
+<ol>
+  <li>
+    You will receive an email informing you of an Ingress Request to approve.
+  </li>
+  <li>
+    Log in to the SRE and, if needed, change to the <strong>Ingress Approver</strong> role.
+  </li>
+  <li>
+    Select <strong>Data Ingress Requests</strong> from the left-hand project menu on the Project Dashboard.
+  </li>
+  <li>
+    Use the <strong>Management VM</strong> to view and inspect the file(s).
+    <ul>
+      <li>
+        <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations". Select <code>ingress-approver > [username]-r (user who made the request).</code>
+      </li>
+      <li>
+        <strong>Linux VM:</strong> Click on the <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>project_data > ingress-approver > [username]-r</code> (user who made the request).
+      </li>
+    </ul>
+  </li>
+</ol>
 
 ## Approve or decline a request 
 
-After inspection, go back to the previous main menu (Data ingress requests) and approve or reject the ingress request, as seen appropriate. The data will be automatically deleted from the ingress approver folder (airlock) following approval/rejection. If the request is approved, you will find the file in your personal storage (folder) in the “ingress” folder. 
+<ol start="5">
+  <li>
+    Return to <strong>Data Ingess Requests</strong> on the Project Dashboard.
+  </li>
+  <li>
+    <strong>Approve</strong> or <strong>Reject</strong> the ingress request.
+    <div class="callout">
+      The request State in <strong>Ingress request history</strong> will change from <em>pending_approval</em> to <em>completed</em>. The files will be automatically deleted from the staging area following approval or rejection.
+    </div>> 
+  </li>
+</ol>
+
+<figure markdown>
+  ![file-upload-failure](img/file-upload-failure.jpg)
+  <figcaption> </figcaption>
+</figure>
+
+<figure markdown>
+  ![file-upload-failure](img/file-upload-failure.jpg)
+  <figcaption> </figcaption>
+</figure>
