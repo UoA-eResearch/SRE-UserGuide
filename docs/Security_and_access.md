@@ -1,12 +1,10 @@
-#Overview of SRE
-
-## Security and access controls
+# Security and access controls
 
 The SRE is hosted on premises. Each project environment is configured to provide the infrastructure, software and tools required to work collaboratively on sensitive research data. Secure virtual desktops enable researchers to work with sensitive data while maintaining greater control and protection. Data is stored separately for each research project and can only be accessed by the team assigned to that environment.
 
 The SRE has enhanced security features to protect project data and is designed to enable data governance within projects using role-based responsibilities and access controls. 
 
-### Multi-tiered security
+## Multi-tiered security
 
 <ul>
     <li>
@@ -40,7 +38,7 @@ The SRE has enhanced security features to protect project data and is designed t
     </li>
 </ul>
 
-### Access controls
+## Access controls
 
 <ul>
     <li>

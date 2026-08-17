@@ -1,6 +1,6 @@
 site_name: SRE User Guide
 nav:
-  - Introduction to SRE: index.md
+  - Home: index.md
   - Overview of SRE:
     - Security and access controls: Security_and_access.md
     - Virtual desktops: Virtual_desktops.md
