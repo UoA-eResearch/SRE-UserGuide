@@ -47,7 +47,7 @@ As a researcher, use the **Ingress Request** to import files from your computer 
 </ol>
 
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![researcher_ingress_1](img/researcher_ingress_1.png)
   <figcaption> </figcaption>
 </figure>
 
@@ -67,12 +67,12 @@ As a researcher, use the **Ingress Request** to import files from your computer 
 </ol>
   
 <figure markdown>
- ![file-upload-failure](img/file-upload-failure.jpg)
+ ![researcher_ingress_2](img/researcher_ingress_2.png)
   <figcaption> </figcaption>
 </figure>
   
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![researcher_ingress_3](img/researcher_ingress_3.png)
   <figcaption> </figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ Use a virtual desktop to access and work with project data on a secure VM.
 </ol>
 
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![researcher_analyse_1](img/researcher_analyse_1.png)
   <figcaption> </figcaption>
 </figure>
 
@@ -104,7 +104,14 @@ Use a virtual desktop to access and work with project data on a secure VM.
       </li>
     </ul>
   </li>
+</ol>
 
+<figure markdown>
+  ![researcher_analyse_2](img/researcher_analyse_2.png)
+  <figcaption> </figcaption>
+</figure>
+
+<ol start="3">
   <li>
     Select your software from the desktop.
       <div class="callout">
@@ -134,7 +141,7 @@ As a researcher, use the <strong>Egress Request</strong> to download your data o
 </ol>
 
 <figure markdown>
-  ![project-selection](img/project-selection.jpg)
+  ![researcher_egress_1](img/researcher_egress_1.png)
   <figcaption> </figcaption>
 </figure>
   
@@ -172,7 +179,7 @@ As a researcher, use the <strong>Egress Request</strong> to download your data o
 </ol>
 
 <figure markdown>
-  ![project-selection](img/project-selection.jpg)
+  ![researcher_egress_2](img/researcher_egress_2.png)
   <figcaption> </figcaption>
 </figure>
 

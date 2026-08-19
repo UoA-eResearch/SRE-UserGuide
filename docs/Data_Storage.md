@@ -16,42 +16,42 @@ An overview of the default storage folders are described in the table below.
 </thead>
 <tbody>
 <tr>
-    <th>project-rw</th>
+    <th><code>project-rw</code></th>
     <td>Read/Write</td>
     <td>All project users</td>
     <td>Shared working directory for collaboration</td>
     <td>Files can be edited by all users</td>
 </tr>
 <tr>
-    <th>project-ro</th>
+    <th><code>project-ro</code></th>
     <td>Read-only</td>
     <td>All project users (Data Custodian has full access)</td>
     <td>Stores raw or source data</td>
     <td>User must copy files out before editing</td>
 </tr>
 <tr>
-    <th>project-personal ([username]-r)</th>
+    <th>project-personal (<code>[username]-r</code>)</th>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher (Data Custodian has full access)</td>
     <td>Private working space for individual research users</td>
-    <td>Contains ingress and egress subfolders</td>
+    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
 </tr>
 <tr>
-    <th>data-custodian ([username]-dc)</th>
+    <th>data-custodian (<code>[username]-dc</code>)</th>
     <td>Read/Write</td>
     <td>Data Custodians</td>
     <td>Used for direct data ingress/egress and data management</td>
-    <td>Contains ingress and egress subfolders</td>
+    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
 </tr>
 <tr>
-    <th>ingress-approver</th>
+    <th><code>ingress-approver</code></th>
     <td>Read/Review</td>
     <td>Ingress Approvers (Data Custodian can view)</td>
     <td>Temporary storage for files awaiting ingress approval</td>
     <td>Files are removed after approval or rejection</td>
 </tr>
 <tr>
-    <th>egress-approver</th>
+    <th><code>egress-approver</code></th>
     <td>Read/Review</td>
     <td>Egress Approvers (Data Custodian can view)</td>
     <td>Temporary storage for files awaiting egress approval</td>

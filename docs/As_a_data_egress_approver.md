@@ -27,6 +27,11 @@ As an Egress Approver, use Data Egress Requests to check and approve files(s) th
   </li>
 </ol>
 
+<figure markdown>
+  ![egress_approver_1](img/egress_approver_1.png)
+  <figcaption> </figcaption>
+</figure>
+
 ## Approve or decline a request 
 
 <ol start="5">
@@ -43,11 +48,6 @@ As an Egress Approver, use Data Egress Requests to check and approve files(s) th
 Please get in touch with the researcher if the request is rejected and provide them with advice for the next steps.
 
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![egress_approver_2](img/egress_approver_2.png)
   <figcaption> </figcaption>
 </figure>

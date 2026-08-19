@@ -28,11 +28,18 @@ http://www.sre.auckland.ac.nz/
 To log in:
 
 <ol>
-    <li>Sign in with your University of Auckland username and password</li>
-    <li>Enter your Two-Factor Authentication code</li>
-    <li>Once logged in, you will be directed to the SRE landing page</li>
-    <li>Select a project from the drop-down menu
-        <div style="border-left: 4px solid #00caef; padding-left: 12px;">
+    <li>
+        Sign in with your University of Auckland username and password
+    </li>
+    <li>
+        Enter your Two-Factor Authentication code
+    </li>
+    <li>
+        Once logged in, you will be directed to the SRE landing page
+    </li>
+    <li>
+        Select a project from the drop-down menu
+        <div class="callout">
         All projects you have access to will be displayed in the drop-down.
         </div>
     </li>
@@ -41,8 +48,7 @@ To log in:
 
 
 <figure markdown>
-  ![project_selection](img/project-selection.jpg)
-  <figcaption> </figcaption>
+  ![project_selection](img/project_selection.png)
 </figure>
 
 ## SRE Landing Page
@@ -50,7 +56,7 @@ To log in:
 The main elements of the SRE landing page are shown below.
 
 <figure markdown>
-  ![project_selection](img/project-selection.jpg)
+  ![sre_landing_page_nav](img/sre_landing_page_nav.png)
   <figcaption> </figcaption>
 </figure>
 
@@ -67,24 +73,24 @@ The main elements of the SRE landing page are shown below.
 The main elements of the project dashboard are shown below.
 
 <figure markdown>
-  ![project_selection](img/project-selection.jpg)
+  ![project_dashboard](img/project_dashboard.png)
   <figcaption> </figcaption>
 </figure>
 
 <ol>
-    <li>Click on Secure Research Environment to switch projects (returns you to the SRE landing page)</li>
-    <li>Displays the name ofthe open project</li>
+    <li>Click on <strong>Secure Research Environment</strong> to switch projects (returns you to the SRE landing page)</li>
+    <li>Displays the name of the open project</li>
     <li>Use the left-hand navigation to toggle between SRE activities, depending on your project role</li>
     <li>Minimise the left-hand project menu</li>
     <li>Displays the logged-in account and current project role
-        <div style="border-left: 4px solid #00caef; padding-left: 12px;">
+        <div class="callout">
         If you have more than one project role, you can switch between roles by selecting an option from this drop-down menu.
         </div>
     </li>
     <li>Log out of the SRE</li>
     <li>Project storage utilisation (quick view)
-        <div style="border-left: 4px solid #00caef; padding-left: 12px;">
-        Select Storage Utilisation from the left-hand project menu to display full storage use and quota information.
+        <div class="callout">
+        Select <strong>Storage Utilisation</strong> from the left-hand project menu to display full storage use and quota information.
         </div>
     </li>
 </ol>

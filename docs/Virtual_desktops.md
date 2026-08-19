@@ -12,6 +12,6 @@ A virtual desktop (or virtual machine, VM) is a virtual version of a computer th
         VMs can have Microsoft Windows Server or Linux Operating Systems.
     </li>
     <li>
-        A list of standard software available within the project environment can be found here. Other applications may be installed by the SRE team upon request, subject to licensing restrictions.
+        A list of standard software available within the project environment can be found on the <a href="https://www.auckland.ac.nz/en/research/research-resources/research-ai-software-computing/advanced-compute/secure-research-environment.html#Standard-software">SRE page of Research Resources</a>. Other applications may be installed by the SRE team upon request, subject to licensing restrictions.
     </li>
 </ul>

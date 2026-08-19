@@ -26,6 +26,19 @@ A data custodian can import (ingress) data and files directly into the Secure Re
       This moves the file(s) from the staging area, and an email is sent to you to confirm your completed ingress request. You will see the new ingress request in <strong>Your ingress request history</strong> with the request State showing as <em>completed</em>. <strong>Note:</strong> All files are virus-scanned before being moved from the staging area.    
     </div>
   </li>
+</ol>
+
+<figure markdown>
+  ![dc_ingress_1](img/dc_ingress_1.png)
+  <figcaption> </figcaption>
+</figure>
+
+<figure markdown>
+  ![dc_ingress_2](img/dc_ingress_2.png)
+  <figcaption> </figcaption>
+</figure>
+
+<ol start="5">
   <li>
     The files will be moved into a timestamped folder within the ingress sub-folder of your personal Data Custodian (<code>username-dc</code>).
     <ul>
@@ -40,17 +53,7 @@ A data custodian can import (ingress) data and files directly into the Secure Re
 </ol>
 
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![dc_ingress_3](img/dc_ingress_3.png)
   <figcaption> </figcaption>
 </figure>
 

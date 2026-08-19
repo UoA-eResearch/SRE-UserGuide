@@ -27,6 +27,11 @@ As an Ingress Approver, use Data Ingress Requests to check and approve files(s) 
   </li>
 </ol>
 
+<figure markdown>
+  ![ingress_approver_1](img/ingress_approver_1.png)
+  <figcaption> </figcaption>
+</figure>
+
 ## Approve or decline a request 
 
 <ol start="5">
@@ -37,16 +42,11 @@ As an Ingress Approver, use Data Ingress Requests to check and approve files(s) 
     <strong>Approve</strong> or <strong>Reject</strong> the ingress request.
     <div class="callout">
       The request State in <strong>Ingress request history</strong> will change from <em>pending_approval</em> to <em>completed</em>. The files will be automatically deleted from the staging area following approval or rejection.
-    </div>> 
+    </div>
   </li>
 </ol>
 
 <figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![file-upload-failure](img/file-upload-failure.jpg)
+  ![ingress_approver_2](img/ingress_approver_2.png)
   <figcaption> </figcaption>
 </figure>

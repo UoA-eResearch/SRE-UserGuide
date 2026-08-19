@@ -1,5 +1,6 @@
 figure {
     display: inline-block;  /* Keeps the figure block to the width of the image */
+    height: auto;             /* Allows the figure to adjust its height based on the image */
     margin: 16px 0;         /* Adds some vertical spacing around the figure */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow to the figure */
     transition: box-shadow 0.3s ease; /* Optional: Smooth transition for hover effect */
