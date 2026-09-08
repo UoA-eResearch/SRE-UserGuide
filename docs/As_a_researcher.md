@@ -57,19 +57,21 @@ As a researcher, use the **Ingress Request** to import files from your computer 
   <li>
     If the Ingress Request is approved, you will receive an email notification, and the request State in <strong>Your Ingress request history</strong> will change from <em>pending_approval</em> to <em>completed</em>.
   </li>
-  
-  <li>
-    The files will be moved into a timestamped folder within the <ecode>ingress</code> sub-folder of your personal folder (<code>username-r</code>).
-    <div class="callout">
-      Keep the file in your personal folder or copy/move it into the <code>project-rw</code> folder to share and collaborate with the rest of your team.
-    </div>
-  </li>
 </ol>
-  
+
 <figure markdown>
  ![researcher_ingress_2](img/researcher_ingress_2.png)
   <figcaption> </figcaption>
 </figure>
+
+<ol start="7">
+  <li>
+    The files will be moved into a timestamped folder within the <ecode>ingress</code> sub-folder of your personal folder (<code>username-r</code>). Access this folder from within the projects <code>personal</code> storage area.
+    <div class="callout">
+      Keep the file in your personal folder or copy/move it into the <code>project-rw</code> folder to share and collaborate with the rest of your team. You can access the <code>project-rw</code> folder within the <code>project-shared</code> storage area.
+    </div>
+  </li>
+</ol>
   
 <figure markdown>
   ![researcher_ingress_3](img/researcher_ingress_3.png)
@@ -101,6 +103,9 @@ Use a virtual desktop to access and work with project data on a secure VM.
       </li>
       <li>
         <strong>Linux VM:</strong> Click on the File Manager from the taskbar at the bottom of the virtual desktop. Select <code>project_data</code> to display available folders.
+        <div class="callout">
+          Personal folders, accessed within the <code>personal</code> storage area, are intended for individual use, while folders within the <code>project-shared</code> storage area enable collaboration across the project team.
+        </div>
       </li>
     </ul>
   </li>

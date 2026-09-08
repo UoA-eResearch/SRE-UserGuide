@@ -1,8 +1,10 @@
 # Data Storage
 
-Each SRE project includes a set of default storage folders to support secure data management, collaboration and controlled data transfer (ingress and egress). Additional storage folders and/or customised folder names can be configured on request during project onboarding.
+Each SRE project includes a set of default storage locations to support secure data management, collaboration and controlled data transfer (ingress and egress). Additional folders and customised folder structures can be configured during project onboarding.
 
-An overview of the default storage folders are described in the table below.
+Storage is divided into <code>personal</code> and <code>project-shared</code> areas. Personal folders are intended for individual use, while project-shared folders enable collaboration across the project team.
+
+The table below provides an overview of the default storage folders available within each project.
 
 <table class="role-table">
 <thead>
@@ -16,20 +18,6 @@ An overview of the default storage folders are described in the table below.
 </thead>
 <tbody>
 <tr>
-    <th><code>project-rw</code></th>
-    <td>Read/Write</td>
-    <td>All project users</td>
-    <td>Shared working directory for collaboration</td>
-    <td>Files can be edited by all users</td>
-</tr>
-<tr>
-    <th><code>project-ro</code></th>
-    <td>Read-only</td>
-    <td>All project users (Data Custodian has full access)</td>
-    <td>Stores raw or source data</td>
-    <td>User must copy files out before editing</td>
-</tr>
-<tr>
     <th>project-personal (<code>[username]-r</code>)</th>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher (Data Custodian has full access)</td>
@@ -42,6 +30,20 @@ An overview of the default storage folders are described in the table below.
     <td>Data Custodians</td>
     <td>Used for direct data ingress/egress and data management</td>
     <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
+</tr>
+<tr>
+    <th><code>project-rw</code></th>
+    <td>Read/Write</td>
+    <td>All project users</td>
+    <td>Shared working directory for collaboration</td>
+    <td>Files can be edited by all users</td>
+</tr>
+<tr>
+    <th><code>project-ro</code></th>
+    <td>Read-only</td>
+    <td>All project users (Data Custodian has full access)</td>
+    <td>Stores raw or source data</td>
+    <td>User must copy files out before editing</td>
 </tr>
 <tr>
     <th><code>ingress-approver</code></th>
