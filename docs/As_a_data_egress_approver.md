@@ -18,10 +18,10 @@ As an Egress Approver, use Data Egress Requests to check and approve files(s) th
     Use the <strong>Management VM</strong> to view and inspect the file(s).
     <ul>
       <li>
-        <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations". Select <code>egress-approver > [username]-r (user who made the request).</code>
+        <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations". Select <code>project_shared</code> > <code>ingress-approver</code> > <code>username-r</code> (user who made the request).
       </li>
       <li>
-        <strong>Linux VM:</strong> Click on the <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>project_data > egress-approver > [username]-r</code> (user who made the request).
+        <strong>Linux VM:</strong> Click on the <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>project_shared</code> > <code>egress-approver</code> > <code>username-r</code> (user who made the request).
       </li>
     </ul>
   </li>

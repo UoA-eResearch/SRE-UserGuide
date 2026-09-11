@@ -40,13 +40,13 @@ A data custodian can import (ingress) data and files directly into the Secure Re
 
 <ol start="5">
   <li>
-    The files will be moved into a timestamped folder within the ingress sub-folder of your personal Data Custodian (<code>username-dc</code>).
+    The files will be moved into a timestamped folder within the <code>ingress</code> sub-folder of your Data Custodian storage folder (<code>username-dc</code>). Access this folder from the <code>personal</code> storage area.
     <ul>
       <li>
-        <strong>Windows VM:</strong>: Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within “Network locations”. Select <code>data-custodian > [username]-dc > ingress</code>.
+        <strong>Windows VM:</strong>: Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within “Network locations”. Select <code>personal</code> > <code>username-dc</code> > <code>ingress</code>.
       </li>
       <li>
-        <strong>Linux VM:</strong> Click on <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>project_data > data-custodian > [username]-dc > ingress.</code>
+        <strong>Linux VM:</strong> Click on <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>personal</code> > <code>username-dc</code> > <code>ingress</code>.
       </li>
     </ul>
   </li>
@@ -86,7 +86,7 @@ A Data Custodian can export (egress) data and files directly out of the Secure R
 
 <ol>
   <li>
-    Open your personal folder <code>[username]-dc</code> on the <strong>Virtual Desktop</strong> and copy the file to be downloaded into the <code>egress</code> subfolder.
+    Open your personal folder <code>username-dc</code> on the <strong>Virtual Desktop</strong> and copy the file to be downloaded into the <code>egress</code> subfolder.
     <div class="callout">
       All files in the <code>egress</code> sub-folder will be copied to the staging area when a request is submitted. If you have file(s) from an earlier egress request in this folder, please delete those files before submitting a new request.
     </div>

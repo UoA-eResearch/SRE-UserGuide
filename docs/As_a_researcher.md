@@ -66,9 +66,9 @@ As a researcher, use the **Ingress Request** to import files from your computer 
 
 <ol start="7">
   <li>
-    The files will be moved into a timestamped folder within the <ecode>ingress</code> sub-folder of your personal folder (<code>username-r</code>). Access this folder from within the projects <code>personal</code> storage area.
+    The files will be moved into a timestamped folder within the <code>ingress</code> sub-folder of your personal storage folder (<code>username-r</code>). Access this folder from within the <code>personal</code> storage area.
     <div class="callout">
-      Keep the file in your personal folder or copy/move it into the <code>project-rw</code> folder to share and collaborate with the rest of your team. You can access the <code>project-rw</code> folder within the <code>project-shared</code> storage area.
+      Keep the file in your personal folder or copy/move it into <code>project-rw</code> to share and collaborate with the rest of your team. You can access the <code>project-rw</code> folder within the <code>project-shared</code> storage area.
     </div>
   </li>
 </ol>
@@ -102,7 +102,7 @@ Use a virtual desktop to access and work with project data on a secure VM.
         <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations" to open the folder you want.
       </li>
       <li>
-        <strong>Linux VM:</strong> Click on the File Manager from the taskbar at the bottom of the virtual desktop. Select <code>project_data</code> to display available folders.
+        <strong>Linux VM:</strong> Click on the File Manager from the taskbar at the bottom of the virtual desktop. Select <code>personal</code> or <code>project_shared</code> to display available folders.
         <div class="callout">
           Personal folders, accessed within the <code>personal</code> storage area, are intended for individual use, while folders within the <code>project-shared</code> storage area enable collaboration across the project team.
         </div>
