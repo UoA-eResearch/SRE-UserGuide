@@ -14,6 +14,14 @@ As an Ingress Approver, use Data Ingress Requests to check and approve files(s) 
   <li>
     Select <strong>Data Ingress Requests</strong> from the left-hand project menu on the Project Dashboard.
   </li>
+</ol>
+
+<figure markdown>
+  ![ingress_approver_1](img/ingress_approver_1.png)
+  <figcaption> </figcaption>
+</figure>
+
+<ol start="4">
   <li>
     Use the <strong>Management VM</strong> to view and inspect the file(s).
     <ul>
@@ -26,11 +34,6 @@ As an Ingress Approver, use Data Ingress Requests to check and approve files(s) 
     </ul>
   </li>
 </ol>
-
-<figure markdown>
-  ![ingress_approver_1](img/ingress_approver_1.png)
-  <figcaption> </figcaption>
-</figure>
 
 ## Approve or decline a request 
 

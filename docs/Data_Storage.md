@@ -18,14 +18,14 @@ The table below provides an overview of the default storage folders available wi
 </thead>
 <tbody>
 <tr>
-    <th>project-personal (<code>[username]-r</code>)</th>
+    <th>project-personal (<code>username-r</code>)</th>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher (Data Custodian has full access)</td>
     <td>Private working space for individual research users</td>
     <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
 </tr>
 <tr>
-    <th>data-custodian (<code>[username]-dc</code>)</th>
+    <th>data-custodian (<code>username-dc</code>)</th>
     <td>Read/Write</td>
     <td>Data Custodians</td>
     <td>Used for direct data ingress/egress and data management</td>

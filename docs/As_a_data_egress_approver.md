@@ -14,6 +14,14 @@ As an Egress Approver, use Data Egress Requests to check and approve files(s) th
   <li>
     Select <strong>Data Egress Requests</strong> from the left-hand project menu on the Project Dashboard.
   </li>
+</ol>
+
+<figure markdown>
+  ![egress_approver_1](img/egress_approver_1.png)
+  <figcaption> </figcaption>
+</figure>
+
+<ol start="4">
   <li>
     Use the <strong>Management VM</strong> to view and inspect the file(s).
     <ul>
@@ -26,11 +34,6 @@ As an Egress Approver, use Data Egress Requests to check and approve files(s) th
     </ul>
   </li>
 </ol>
-
-<figure markdown>
-  ![egress_approver_1](img/egress_approver_1.png)
-  <figcaption> </figcaption>
-</figure>
 
 ## Approve or decline a request 
 
