@@ -2,33 +2,22 @@
 
 ## Getting Help
 
-<ol>
-    <li>
-        To request a new SRE project environment or changes to an existing envrionment, please enter your request.
-    </li>
-    <li>
-        If you have any questions about the SRE service, or require assistance with an existing SRE project please contact:
-        <div class="callout">
-            Name (hours of support)
-            Group
-            Email
-            Phone?
-        </div>
-        Please include the following information:
-        <ul>
-            <li>Project name</li>
-            <li>Role</li>
-            <li>Screenshot</li>
-            <li>Time of issue</li>
-        </ul>
-    </li>
-</ol>
+If you have any questions about the SRE service, or require assistance with an existing SRE project, please email <a href="mailto:researchdata@auckland.ac.nz?subject=SRE Support Request">researchdata@auckland.ac.nz</a>.
 
-## Scheduled maintenance
+<div class="callout">
+    Please include the following information:
+    <ul>
+        <li>Project name</li>
+        <li>Role</li>
+        <li>Time of issue</li>
+        <li>Screenshot</li>
+    </ul>
+</div>
 
-The SRE undergoes scheduled maintenance on the **first Tuesday of every month**. 
+## Scheduled Maintenance
 
-During this time, the environment will be in **maintenance mode for the 
-full day** and may be unavailable.
+The SRE undergoes scheduled maintenance on the **first Tuesday of every month**.<br>
+
+During this time, the environment will be in **maintenance mode for the full day** and may be unavailable.<br>
 
 Any other SRE maintenance actions outside of these windows will be announced by an outage message on the web portal.
