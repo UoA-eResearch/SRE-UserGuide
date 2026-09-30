@@ -2,20 +2,15 @@
 
 ## Pre-requisites
 
-You will need to complete the following steps to access the SRE:
+Ensure you have the following SRE access requirements:
 
-<ol>
-    <li>Complete the online sensitive data training and quiz</li>
-    <li>Ensure you have the following access requirements:
-        <ul>
-            <li>University of Auckland username and password</li>
-            <li>VPN access (required off-campus or outside the University of Auckland intranet)</li>
-            <li>Internet connection and computer</li>
-            <li>Supported web browser (Chrome, Edge, Firefox)</li>
-            <li>Multi-factor authentication</li>
-        </ul>
-    </li>
-</ol>
+<ul>
+    <li>University of Auckland username and password</li>
+    <li>VPN access (required off-campus or outside the University of Auckland intranet)</li>
+    <li>Internet connection and computer</li>
+    <li>Supported web browser (Chrome, Edge, Firefox)</li>
+    <li>Multi-factor authentication</li>
+</ul>
 
 ## Logging into the SRE
 
