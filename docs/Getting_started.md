@@ -33,7 +33,7 @@ To log in:
         Once logged in, you will be directed to one of the following pages:
         <ul>
           <li>The dashboard of your project, if you are a member of exactly one project.</li>
-          <li>A page where you can choose the project, if you are member of more than one project.</li>
+          <li>A page where you can choose a project, if you are member of more than one project.</li>
         </ul>
     </li>
 </ol>
