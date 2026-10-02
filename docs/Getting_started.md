@@ -14,10 +14,10 @@ Ensure you have the following SRE access requirements:
 
 ## Logging into the SRE
 
-You can access the SRE by clicking [here](http://www.sre.auckland.ac.nz/) or entering the following URL:
+You can access the SRE by clicking [here](https://www.sre.auckland.ac.nz/) or entering the following URL:
 
 ```
-http://www.sre.auckland.ac.nz/
+https://www.sre.auckland.ac.nz/
 ```
 
 To log in:
