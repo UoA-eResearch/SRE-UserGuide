@@ -1,46 +1,70 @@
 # Data Storage
 
-Each project in SRE has three storage folders.  
+Each SRE project includes a set of default storage locations to support secure data management, collaboration and controlled data transfer (ingress and egress). Additional folders and customised folder structures can be configured during project onboarding.
 
-(i) **Shared read-write:** Workspace where everybody on the project has full access (edit/move/copy/delete). Everyone in the project can read-write in this folder. 
+Storage is divided into <code>personal</code> and <code>project-shared</code> areas. Personal folders are intended for individual use, while project-shared folders enable collaboration across the project team.
 
-(ii) **Shared read-only:** A place where the data custodian can place data sets that are not to be changed by project team members. Data custodians have read-write access here and everybody else have read-only access. 
+The table below provides an overview of the default storage folders available within each project.
 
-(iii) **Personal:** Personal folders of each user in the project will be listed in this folder. There are two subfolders under each project personal folder - ingress and egress folders.
+<table class="role-table">
+<thead>
+<tr>
+    <th>Folder name</th>
+    <th>Access</th>
+    <th>Who can Access</th>
+    <th>Purpose</th>
+    <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th>project-personal (<code>username-r</code>)</th>
+    <td>Read/Write (own folder)</td>
+    <td>Individual researcher (Data Custodian has full access)</td>
+    <td>Private working space for individual research users</td>
+    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
+</tr>
+<tr>
+    <th>data-custodian (<code>username-dc</code>)</th>
+    <td>Read/Write</td>
+    <td>Data Custodians</td>
+    <td>Used for direct data ingress/egress and data management</td>
+    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
+</tr>
+<tr>
+    <th><code>project-rw</code></th>
+    <td>Read/Write</td>
+    <td>All project users</td>
+    <td>Shared working directory for collaboration</td>
+    <td>Files can be edited by all users</td>
+</tr>
+<tr>
+    <th><code>project-ro</code></th>
+    <td>Read-only</td>
+    <td>All project users (Data Custodian has full access)</td>
+    <td>Stores raw or source data</td>
+    <td>User must copy files out before editing</td>
+</tr>
+<tr>
+    <th><code>ingress-approver</code></th>
+    <td>Read/Review</td>
+    <td>Ingress Approvers (Data Custodian can view)</td>
+    <td>Temporary storage for files awaiting ingress approval</td>
+    <td>Files are removed after approval or rejection</td>
+</tr>
+<tr>
+    <th><code>egress-approver</code></th>
+    <td>Read/Review</td>
+    <td>Egress Approvers (Data Custodian can view)</td>
+    <td>Temporary storage for files awaiting egress approval</td>
+    <td>Files are removed after approval or rejection</td>
+</tr>
+</tbody>
+</table><br>
 
-After researcher's data ingress request is approved by the custodian/approver, the data is placed in the personal-ingress folder.
+<div style="border-left: 4px solid #00caef; padding-left: 12px;">
+    <strong>Warning:</strong>
+    Data saved outside these folders (e.g., on the VM Desktop or Documents folders) are not persistent and may be lost.
+</div>
 
-A researcher copies the data to be exported out of SRE in the personal-egress folder and requests egress and upon approval, the data is made availble to be downloaded.
-
-The data custodian can access any of these users’ personal folder to view/update/delete data in an SRE. 
-
-### Storage structure for Researcher 
-
-Each researcher has access to the above three folders. Please note that the data custodians have read-write access to the Researcher's personal folder in SRE.
-
-### Storage structure for Data Custodian 
-
-The following are the list of folders a data custodian has access to: 
-
-**Project-rw** - Shared project folder with read and write access.  
-The content in this folder can be edited by the users who have access to it. 
-
-**Project-ro** – Shared project folder with read only access.  
-The data in this folder cannot be manipulated by anyone except data custodian. 
-
-**Project-personal** – Each project team member has a personal folder in the SRE project where they have read-write privileges. 
-Under personal folder there are two folders - Ingress and Egress. The data custodians/ingress and egress approvers access these folders to move in the requested files as part of data ingress or egress process. 
-
-The data custodian can access any of these users’ personal folder to view/update/delete data in an SRE. 
-
-**Custodian** – Only data custodian has access to this folder.  It has two sub-folders - ingress and egress
-
-When a data custodian ingress data directly, the uploaded files are moved into ingress folder and the data custodian can then move these files into project-rw, project personal (username) or egress-approver folder. 
-
-When a data custodian takes data out, they copy the output file in egress folder and requests egress and the data is available for download.
-
-**Egress approver** - Folder where all the egress request files land in. 
-Both data custodian and egress approver have access to this folder. 
-
-**Ingress approver** – Folder where all the ingress request files land in. 
-Both data custodian and ingress approver have access to this folder. 
+The data will only reside in the SRE during the research project. After project completion, a cost-effective, secure approach to data should be used (e.g., data should be securely archived or deleted).

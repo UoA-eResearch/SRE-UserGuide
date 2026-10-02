@@ -1,221 +1,191 @@
 # As a Researcher
 
-## Log into the SRE 
+## Import data (Ingress Request)
 
-Open browser and use the following [SRE URL/domain](https://sre.nectar.auckland.ac.nz/)  
+As a researcher, use the **Ingress Request** to import files from your computer or a location outside of the Secure Research Environment.
 
-In the log in page, enter your UPI and password.
+### Create a new Ingress Request
 
-Enter MFA (authy token).
-
-You will be directed to the On-prem SRE landing page. 
+<ol>
+  <li>
+    Select <strong>Data Ingress</strong> from the left-hand project menu
+  </li>
+  
+  <li>
+    Select <strong>Choose File</strong> to find a file from your computer
+    <div class="callout">
+      You can zip up files to upload multiple files at once
+    </div>
+  </li>
+  
+  <li>
+    Once displayed, select <strong>Upload</strong> to copy your file to the staging area
+    <div class="callout">
+      Review <strong>Storage Utilisation</strong> from the left-hand project menu, or in the bottom-right of the Project Dashboard, to confirm sufficient free storage space in the staging area and Project Storage.
+      <br><br>
+      If you were partway through an Ingress Request and logged out after 15 minutes of inactivity, you will see a file upload failure notification prompting you to log in again.
+    </div>
+  </li>
+</ol>
 
 <figure markdown>
-  ![landing](img/landing.png)
+  ![file-upload-failure](img/file-upload-failure.jpg)
   <figcaption> </figcaption>
 </figure>
 
-In the landing page, select your project from the drop-down menu. All the projects you have access to will be displayed in the drop-down. Select the one you need to work with. 
+<ol start="4">
+  <li>
+    Select <strong>Request Ingress</strong>
+    <div class="callout">
+      This moves the files into the stagin area. A notificaiton is sent to you and the Ingress Approver to evaluate your request, and you will see the request State in <strong>Your Ingress request history</strong> change from <em>creating</em> to <em>pending_approval</em>. All files are virus-scanned before being sent to the Ingress Approver for approval.
+    </div>
+  </li>
+  
+  <li>
+    Wait for the review process to complete.
+  </li>
+</ol>
 
 <figure markdown>
-  ![choosing_project](img/choosing_project.png)
+  ![researcher_ingress_1](img/researcher_ingress_1.png)
   <figcaption> </figcaption>
 </figure>
 
-## Analysing Data 
+### Access files for analysis
 
-From the project’s main menu, choose Virtual desktop if you need to access and work with the data in your personal folder or shared project folders. 
+<ol start="6">
+  <li>
+    If the Ingress Request is approved, you will receive an email notification, and the request State in <strong>Your Ingress request history</strong> will change from <em>pending_approval</em> to <em>completed</em>.
+  </li>
+</ol>
 
 <figure markdown>
-  ![VMs](img/VMs.png)
+ ![researcher_ingress_2](img/researcher_ingress_2.png)
   <figcaption> </figcaption>
 </figure>
 
-Choose from either the Windows Research VM or Linux Research VM. This will log you into the virtual machine which have the relevant software tools installed for your analysis. 
-
-Click on the File Explorer from the task bar at the bottom of virtual desktop, to choose the folder you want. Click on the folder which have the data you need to work with. 
-
+<ol start="7">
+  <li>
+    The files will be moved into a timestamped folder within the <code>ingress</code> sub-folder of your personal storage folder (<code>username-r</code>). Access this folder from within the <code>personal</code> storage area.
+    <div class="callout">
+      Keep the file in your personal folder or copy/move it into <code>project-rw</code> to share and collaborate with the rest of your team. You can access the <code>project-rw</code> folder within the <code>project-shared</code> storage area.
+    </div>
+  </li>
+</ol>
+  
 <figure markdown>
-  ![folders](img/folders.png)
+  ![researcher_ingress_3](img/researcher_ingress_3.png)
   <figcaption> </figcaption>
 </figure>
 
-## Opening software and running analysis 
+If the Ingress Approver rejects your request, you will receive an email notification of the rejection, and you can contact the Ingress Approver for clarification. The request is marked as <em>rejected</em>, and the file is deleted from the staging area.
+  
+## Analyse data
 
-Select your software from the desktop and open the datasets you need to work with from your personal or project’s shared folder. The files and folders can be accessed through clicking on “This PC” and choosing the appropriate folder under “Network locations”.
- 
+Use a virtual desktop to access and work with project data on a secure VM.
+
+<ol>
+  <li>
+    Choose <strong>Virtual Desktops</strong> from the left-hand project menu and select the <strong>Research VM</strong> (either Windows or Linux, as available).
+  </li>
+</ol>
+
 <figure markdown>
-  ![folders_arrows](img/folders_arrows.png)
+  ![researcher_analyse_1](img/researcher_analyse_1.png)
   <figcaption> </figcaption>
 </figure>
 
-After finishing the analysis, “Save” your work in the appropriate folder (see the next section on “Save data”). 
-
-If your software is not available in the desktop, click on the Search icon in the task bar, type in and select the software you need. 
+<ol start="2">
+  <li>Access project data from the network folders.
+    <ul>
+      <li>
+        <strong>Windows VM:</strong> Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within "Network locations" to open the folder you want.
+      </li>
+      <li>
+        <strong>Linux VM:</strong> Click on the File Manager from the taskbar at the bottom of the virtual desktop. Select <code>personal</code> or <code>project_shared</code> to display available folders.
+        <div class="callout">
+          Personal folders, accessed within the <code>personal</code> storage area, are intended for individual use, while folders within the <code>project-shared</code> storage area enable collaboration across the project team.
+        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
 
 <figure markdown>
-  ![windows_icon](img/windows_icon.png)
+  ![researcher_analyse_2](img/researcher_analyse_2.png)
   <figcaption> </figcaption>
 </figure>
 
-## Save data into different folders (personal, shared, egress) 
+<ol start="3">
+  <li>
+    Select your software from the desktop.
+      <div class="callout">
+        If your software is not available on the desktop, click on the Search icon in the taskbar, type in and select the software you need.
+      </div>
+  </li>
+  
+  <li>
+    Once the analysis is complete, select <code>project-rw</code> or your personal folder (<code>username-r</code>) and press <strong>Save</strong> to save your output.
+      <div class="callout">
+        As a researcher, you cannot save a file in the <code>project-ro</code> folder.<br>
+        <strong>Saving your files to the VM's <code>Desktop</code> and <code>Documents</code> folders is not recommended, as VMs are replaceable and the files you save there could be lost.</strong>
+      </div>
+  </li>
+</ol>
 
-Once the analysis is done, choose “project-rw” or your personal folder and press “Save” to store your data. If you want to egress your analysed data out of the SRE, follow instructions under  [Request Egress/Export Data](https://uoa-eresearch.github.io/On-Prem-SRE-UserGuide/As_a_researcher/#request-egressexport-data).
+## Export data (Egress Request)
+
+As a researcher, use the <strong>Egress Request</strong> to download your data outputs to your local computer or a location outside of the Secure Research Environment.
+
+### Create a new Egress Request
+
+<ol>
+  <li>
+    Open your personal folder (<code>username-r</code>) on the virtual desktop and copy the file to be downloaded into the <code>egress</code> subfolder.
+  </li>
+</ol>
 
 <figure markdown>
-  ![save](img/save.png)
+  ![researcher_egress_1](img/researcher_egress_1.png)
+  <figcaption> </figcaption>
+</figure>
+  
+<ol start="2">
+  <li>
+    Return to <strong>Data Egress</strong> from the left-hand project menu on the Project Dashboard.
+  </li>
+  
+  <li>
+    Select <strong>Request Egress</strong>
+    <div class="callout">
+      This will copy any files from your <code>egress</code> sub-folder into the staging area (egress-approver folder) where an Egress Approver can review the files to ensure there are no identifiable or sensitive information. An email is sent to you and the Egress Approver to evaluate your request, and you will see the request State in <strong>Your egress request history</strong> change from <em>creating</em> to <em>pending-approval</em>.
+    </div>
+  </li>
+
+  <li>
+    Wait for the review process to complete.
+  </li>
+</ol>
+
+### Access files for download
+
+<ol start="5">
+  <li>
+    If the Egress Request is approved, you will receive an email notification, and the request State in <strong>Your egress request history</strong> will change from <em>pending-approval</em> to <em>completed</em>.
+  </li>
+
+  <li>
+    The files will be available for download. Click on the zip file under the <strong>Files available for download</strong>
+  </li>
+
+  <li>
+    Go to your local computer's <code>Download</code> folder. Unzip the downloaded folder - with file(s) inside - and save to an appropriate location.
+  </li>
+</ol>
+
+<figure markdown>
+  ![researcher_egress_2](img/researcher_egress_2.png)
   <figcaption> </figcaption>
 </figure>
 
-
-> [!NOTE]
-In SRE, as a “Researcher” you cannot save a file in “project-ro” folder. Saving your files on VM’s “Desktop” and “Documents” folders is **not recommended** as the VMs are replaceable and the data you have saved there could be lost. 
-
-### Access data from shared or read-only folder 
-The researchers can access the data and can analyse it to generate outputs but cannot edit its content. Only the data custodian can edit the data in a project's RO folder. 
-
-## Request Ingress/Import Data 
-As a researcher to upload files from your computer or a location outside of Secure Research Environment, you need to use “Data Ingress” Option from the project’s main menu. 
- 
-<figure markdown>
-  ![data_ingress1](img/data_ingress1.png)
-  <figcaption> </figcaption>
-</figure>
-
-This feature allows your files to be copied into a staging area and a request can be made to ingress (import) the files into your personal folder in SRE. This is a two-step process.  
-
-(i) Choose the file and upload it into the staging area.  Please note the maximum size is 1 GB per file but you can choose and upload multiple files at a go.  
-You can also zip up a file and upload it, but then the size of the zipped folder should be less than 1 GB. 
-
-<figure markdown>
-  ![data_ingress2](img/data_ingress2.png)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![data_ingress2-5](img/data_ingress2-5.png)
-  <figcaption> </figcaption>
-</figure>
-
-(ii) Click on the “Request ingress”. This moves the files into the airlock and a notification is sent to you and the ingress approver to evaluate your request. 
-
-<figure markdown>
-  ![data_ingress3](img/data_ingress3.png)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![data_ingress4](img/data_ingress4.png)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![Email](img/Email.png)
-  <figcaption> </figcaption>
-</figure>
-
-(In the ingress request history, you will see the request state changed from “creating” to “pending_approval”). 
-
-<figure markdown>
-  ![data_ingress5](img/data_ingress5.png)
-  <figcaption> </figcaption>
-</figure>
-
-Following the ingress approver/data custodian’s evaluation of the data, if the request is approved, state of the request changes to “approved” and you will receive a notification of the same. The files will be moved from the airlock into “ingress” inside your personal folder.  
-
-<figure markdown>
-  ![ingress_folder1](img/ingress_folder1.png)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![ingress_folder2](img/ingress_folder2.png)
-  <figcaption> </figcaption>
-</figure>
-
-You can either keep the imported file in your personal folder or copy it into the “project-rw” folder to share and collaborate with rest of your team. 
-
-If the Ingress Approver rejects your request, state of the request changes to “rejected” and the file is deleted from the staging area. You can contact the Approver for a clarification and seek advice on the next steps.   
-
-## Request Egress/Export Data 
-As a researcher after a data analysis, you can request to download your data from Secure Research Environment to your local computer or a location outside of Secure Research Environment. Once the analysis is completed and the file is ready to be downloaded, open your personal folder.  
-
-<figure markdown>
-  ![egress_1](img/egress_1.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Copy the file to be downloaded in the “egress” subfolder of your personal folder.
-
-<figure markdown>
-  ![egress_2](img/egress_2.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Once the file is inside the egress subfolder, go back to the SRE main menu and select “Data Egress” from the options. 
-
-<figure markdown>
-  ![egress_3](img/egress_3.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Click on the “Request Egress” button as shown below. This will copy the data from the egress subfolder into an airlock (egress-approver folder) where an egress approver can review the data and make sure there are no identifiable/sensitive information in the requested files.  
-
-<figure markdown>
-  ![egress_4](img/egress_4.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-At this point, the researcher will receive an email notification that the request (time-stamped) has been submitted and will be reviewed by an egress approver. On refreshing the screen, the state of the request in “Your egress request history” will change from “creating” to “pending_approval”. 
-
-<figure markdown>
-  ![egress_5](img/egress_5.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-If the request is approved, the researcher will receive an email notification of the same and the requested file will be available for download on this page. 
-
-<figure markdown>
-  ![egress_6](img/egress_6.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Click on the zip file link under the “Files available for download” to download the zipped-up folder. Next go to your local computer’s download folder and unzip the downloaded folder (with file/s inside) into appropriate location. 
-
-If the request is rejected, please contact the Egress Approver for further details. 
-
-## Linux Virtual Machine
-
-To access Linux VM, you only need to click on the Linux icon on the main project page. You will see the same folders (project-personal, project-ro and project-rw) on Linux desktop area plus Terminal and Home folder.
-
-<figure markdown>
-  ![Linux](img/Linux.png)
-  <figcaption> </figcaption>
-</figure>
-
-<figure markdown>
-  ![Terminal](img/Terminal.png)
-  <figcaption> </figcaption>
-</figure>
-
-## Time outs 
-
-The VM connection will be closed once the idle timeout has been reached. 15 minutes of inactivity will lead to connection to the VM being lost and you may need to log in again with your UPI, password and MFA to continue. 
-
-<figure markdown>
-  ![timeout](img/timeout.png)
-  <figcaption> </figcaption>
-</figure>
-
-Please note after 24 hours, a session will be auto logged off. Please get in touch if you want longer uninterrupted sessions.
-
-## Changing role in SRE 
-
-You can readily change your role (if you have been given multiple roles by the SRE team at the discretion of data custodian) by selecting an option from the dropdown menu at the rightmost corner of the main menu.  
-
-<figure markdown>
-  ![change_role](img/change_role.png)
-  <figcaption> </figcaption>
-</figure>
-
-You can choose one of the four options according to your requirement in the project. Please contact your project owner/data custodian if you need to access SRE with a different role (only the project owner/data custodian can request SRE team to assign various roles to different users in SRE). 
+If the request is rejected, contact the Egress Approver for further details.

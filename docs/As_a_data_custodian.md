@@ -1,147 +1,119 @@
 # As a Data Custodian 
 
-## Log into SRE  
+## Import (ingress) data directly into the SRE
 
-Open browser and use the [SRE URL/domain](https://sre.nectar.auckland.ac.nz/)  
+A data custodian can import (ingress) data and files directly into the Secure Research Environment (SRE) without requiring approval from the ingress approver.
 
-In the log in page, enter UPI, password and Authy token.
-
-## Analysing Data 
-
-From the project’s main menu, choose Virtual desktop if you need to access and work with the data in your personal folder or shared project folders. 
-
-<figure markdown>
-  ![custodian](img/custodian.png)
-  <figcaption> </figcaption>
-</figure>
-
-Choose the Data Custodian VM; this will log you into the virtual machine which have the relevant software tools installed for your analysis.
-
-<figure markdown>
-  ![custodian_VM](img/custodian_VM.png)
-  <figcaption> </figcaption>
-</figure>
-
-Click on the File Explorer from the task bar at the bottom of virtual desktop, to choose the folder you want. Click on the folder which have the data you need to work with. 
-
-In the Research VM, the following list of folders are available to a data custodian: 
-
-Project-rw 
-
-Project-ro 
-
-Project-personal (of all users in the project)
-
-Custodian
-
-Egress approver 
-
-Ingress approver 
+<ol>
+  <li>
+    Select <strong>Data Ingress</strong> from the left-hand project menu
+  </li>
+  <li>
+    Select <strong>Choose File</strong> to find a file from your computer
+    <div class="callout">
+      You can zip up files to upload multiple files at once
+    </div>  
+  </li>
+  <li>
+    Once displayed, select <strong>Upload</strong> to copy your file to the staging area
+    <div class="callout">
+      Review <strong>Storage Utilisation</strong> from the left-hand project menu, or in the bottom-right of the Project Dashboard, to confirm sufficient free storage space in the staging are and Project Storage.
+    </div>
+  </li>
+  <li>
+    Select <strong>Request Ingress</strong>
+    <div class="callout">
+      This moves the file(s) from the staging area, and an email is sent to you to confirm your completed ingress request. You will see the new ingress request in <strong>Your ingress request history</strong> with the request State showing as <em>completed</em>. <strong>Note:</strong> All files are virus-scanned before being moved from the staging area.    
+    </div>
+  </li>
+</ol>
 
 <figure markdown>
-  ![custodian_vm_foledrs](img/custodian_vm_foledrs.png)
-  <figcaption> </figcaption>
-</figure>
-
-## Opening software and running analysis 
-
-Select your software from the desktop and open the datasets you need to work with from your personal or project’s shared folder. The files and folders can be accessed through clicking on “This PC” and choosing the appropriate folder under “Network locations”.
- 
-After finishing the analysis, “Save” your work in the appropriate folder. 
-
-If your software is not available in the desktop, click on the Search icon in the task bar, type in and select the software you need. 
-
-<figure markdown>
-  ![windows_icon](img/windows_icon.png)
-  <figcaption> </figcaption>
-</figure>
-
-
-## Ingress data directly into SRE 
-
-A data custodian can import (ingress) data directly into SRE without requiring approval from the ingress approver.  
-
-For this, in the main menu select “Data Ingress” and “choose the file” to be uploaded and click on “Upload”. This copies your file from your computer/storage device to the airlock.  
-
-<figure markdown>
-  ![custodian_ingress](img/custodian_ingress.png)
-  <figcaption> </figcaption>
-</figure>
-
-Select “Request ingress” to move the file from the airlock to “Custodian” folder. The request state in the “ingress request history” changes from “creating” to “completed”. 
-
-You will also receive two notifications in your email - your file has been uploaded and then that it has been processed. 
-
-## Egress (export) data out of SRE
-
-As a data custodian to download data from the project’s SRE, login to SRE main menu and open the "Data Custodian VM" under "Virtual Desktops".  
-
-<figure markdown>
-  ![egress_12](img/egress_12.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-In the virtual machine, open the File explorer and select “custodian” folder under network locations. Select your personal “custodian” folder (if there are multiple data custodians in your project).  
-
-<figure markdown>
-  ![egress_13](img/egress_13.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-There are two subfolders available, select the “egress” subfolder and copy the data to be egressed in here.  
-
-<figure markdown>
-  ![egress_14](img/egress_14.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-> [!NOTE]
-> All the files in this “egress” folder will be copied to be downloaded when a request is submitted. Therefore, if you have data from an earlier egress request in this folder, please delete it before submitting a new request.  
-
-Switch back to the SRE main menu, select the Data Egress option, and click on the “Request Egress” button.  
-
-<figure markdown>
-  ![egress_15](img/egress_15.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-As a data custodian, the egress request will be approved and completed, and the file is made available for downloading bypassing the review process. A notification of the same would be received by the data custodian/s. 
-
-Click on the zip file link under the “Files available for download” to download the zipped-up folder. Next go to your local computer’s download folder and double click on the zipped file.  
-
-<figure markdown>
-  ![egress_16](img/egress_16.PNG)
-  <figcaption> </figcaption>
-</figure>
-
-Click on the arrow next to “Unzip to” tab, provide appropriate location and select “Unzip”. 
-
-<figure markdown>
-  ![egress_17](img/egress_17.PNG)
+  ![dc_ingress_1](img/dc_ingress_1.png)
   <figcaption> </figcaption>
 </figure>
 
 <figure markdown>
-  ![egress_18](img/egress_18.PNG)
+  ![dc_ingress_2](img/dc_ingress_2.png)
   <figcaption> </figcaption>
 </figure>
 
-The downloaded file/s can be found in the “egress” folder in this location. All the future unzipped egress files will be in this folder. 
+<ol start="5">
+  <li>
+    The files will be moved into a timestamped folder within the <code>ingress</code> sub-folder of your Data Custodian storage folder (<code>username-dc</code>). Access this folder from the <code>personal</code> storage area.
+    <ul>
+      <li>
+        <strong>Windows VM:</strong>: Click on the File Explorer from the taskbar at the bottom of the virtual desktop. Select <strong>This PC</strong> to display available folders within “Network locations”. Select <code>personal</code> > <code>username-dc</code> > <code>ingress</code>.
+      </li>
+      <li>
+        <strong>Linux VM:</strong> Click on <strong>File Manager</strong> from the taskbar at the bottom of the virtual desktop. Select <code>personal</code> > <code>username-dc</code> > <code>ingress</code>.
+      </li>
+    </ul>
+  </li>
+</ol>
 
 <figure markdown>
-  ![egress_19](img/egress_19.PNG)
+  ![dc_ingress_3](img/dc_ingress_3.png)
   <figcaption> </figcaption>
 </figure>
 
+## File and data management
 
-## Deletion of datasets 
+A Data Custodian can access and manage data and file(s) across the project storage locations to ensure that data and associated files are shared only with appropriate project team members.
 
-As a data custodian, you have read and write access to every folder in your project in an SRE. You may delete data from user’s personal, custodian, ingress-approver, egress-approver, project-ro and project-rw folders. 
+Possible project actions include:
 
-## Request for change of user’s role/permission level 
+<ul>
+  <li>
+    Store <strong>source (raw) project data</strong> to the <code>project-ro</code> folder. The content of this folder cannot be edited by other users, but a researcher can make a working copy for analysis. Any shared project data or files that can be modified by all users can be stored in the <code>project-rw</code> folder.
+  </li>
+  <li>
+    Store files that need to be accessed by a specific project member to their <strong>project-personal</strong> folder, usually named <code>[username]-r</code>.
+  </li>
+  <li>
+    Store files that need to be accessed by a project sub-group to a customised folder, as appropriate.
+  </li>
+  <li>
+    Delete data and files from shared and personal project folders, as appropriate.
+  </li>
+</ul>
 
-As a data custodian, you can request for a specific user’s role to be changed in your project or give them a different permission level (read-write or read-only) in SRE. For this, please send an email to the SRE team. 
+A Data Custodian can view data and files within the ingress-approver and egress-approver folders. This enables file storage visibility and allows the Data Custodian to view progress of pending ingress/egress requests.
 
-## Request to remove a user from a project 
+## Export (egress) data directly out of the SRE
 
-As a data custodian, you can request for a specific user to be added or deleted from your project in SRE. Please send an email to the SRE team with the users' details – full name, UPI, email and role in SRE (researcher/data custodian/ingress-approver/egress-approver). 
+A Data Custodian can export (egress) data and files directly out of the Secure Research Environment (SRE) without requiring approval from the egress approver.
+
+<ol>
+  <li>
+    Open your personal folder <code>username-dc</code> on the <strong>Virtual Desktop</strong> and copy the file to be downloaded into the <code>egress</code> subfolder.
+    <div class="callout">
+      All files in the <code>egress</code> sub-folder will be copied to the staging area when a request is submitted. If you have file(s) from an earlier egress request in this folder, please delete those files before submitting a new request.
+    </div>
+  </li>
+  <li>
+    Return to <strong>Data Egress</strong> on the Project Dashboard.
+  </li>
+  <li>
+    Select <strong>Request Egress</strong>.
+    <div class="callout">
+      The file(s) will be available for download, and you will receive an email confirming your completed egress request. The egress request will be listed in <strong>Your egress request history</strong> with the request State showing as <em>completed</em>.
+    </div>
+  </li>
+  <li>
+    Select the file link under <strong>Files available for download</strong>.
+  </li>
+  <li>
+    Go to the <code>Downloads</code> folder on your local computer to access the file(s) and move them to a secure storage location (e.g., a project Research Drive).
+  </li>
+</ol>
+
+## Request project changes
+
+### Request for change of user's role/permission level
+
+A Data Custodian can request for a specific user’s role to be changed within a project or give them a different permission level (read-write or read-only) in SRE. To request, please send an email to the SRE team.
+
+### Request to add/remove a user from the project
+
+A Data Custodian can request for a specific user to be added or deleted from the project in SRE. Please send an email to the SRE team with the users' details – full name, USERNAME, email and role in SRE (researcher/data custodian/ingress-approver/egress-approver).

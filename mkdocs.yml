@@ -1,23 +1,23 @@
 site_name: SRE User Guide
 nav:
-  - Introduction to SRE: index.md
-  - SRE: On-prem_SRE.md
-  - Pre-requisites for using SRE: Pre-requisites_for_using_SRE.md
-  - Definition of common terms: Definition_of_common_terms.md
-  - Roles in SRE: Roles_in_SRE.md
-  - Data Storage: Data_Storage.md
+  - Home: index.md
+  - Overview of SRE:
+    - Security and access controls: Security_and_access.md
+    - Virtual desktops: Virtual_desktops.md
+    - Data Storage: Data_Storage.md
   - Using SRE:
+    - Getting Started: Getting_started.md
     - As a Researcher: As_a_researcher.md
     - As a Data Custodian: As_a_data_custodian.md
     - As a Data Ingress Approver: As_a_data_ingress_approver.md
     - As a Data Egress Approver: As_a_data_egress_approver.md
-  - Monthly Maintenance: Maintenance.md
-
+  - Support and Contact: Support_and_contact.md
+  - Glossary: Definition_of_common_terms.md
 
 theme:  
   name: material
   favicon: img/favicon.png
-  logo: img/logo.png
+  logo: img/uoa-logo.png
   palette:
     primary: custom
   font:
