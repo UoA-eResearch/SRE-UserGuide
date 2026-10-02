@@ -78,3 +78,8 @@ line-height: 1.4;
 margin-top: 1.5rem;
 margin-bottom: 0.5rem;
 }
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 2.5rem;
+    width: auto;
+}
