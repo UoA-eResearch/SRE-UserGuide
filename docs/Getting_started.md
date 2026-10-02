@@ -30,25 +30,19 @@ To log in:
         Enter your Two-Factor Authentication code
     </li>
     <li>
-        Once logged in, you will be directed to the SRE landing page
-    </li>
-    <li>
-        Select a project from the drop-down menu
-        <div class="callout">
-        All projects you have access to will be displayed in the drop-down.
-        </div>
+        Once logged in, you will be directed to one of the following pages:
+        <ul>
+          <li>The dashboard of your project, if you are a member of exactly one project.</li>
+          <li>A page where you can choose the project, if you are member of more than one project.</li>
+        </ul>
     </li>
 </ol>
 
+## Choosing your project
 
+You will only be asked to choose a project if you are a member of more than one project.
 
-<figure markdown>
-  ![project_selection](img/project_selection.png)
-</figure>
-
-## SRE Landing Page
-
-The main elements of the SRE landing page are shown below.
+The main elements of this page are shown below.
 
 <figure markdown>
   ![sre_landing_page_nav](img/sre_landing_page_nav.png)
@@ -58,7 +52,7 @@ The main elements of the SRE landing page are shown below.
 <ol>
     <li>Displays the username of the logged in user</li>
     <li>Log out of the SRE</li>
-    <li>Project selection drop-down menu</li>
+    <li>Project selection drop-down menu. All projects you have access to will be displayed in this drop-down.</li>
     <li>SRE information page</li>
     <li>Privacy policy</li>
     <li>SRE user guide</li>
