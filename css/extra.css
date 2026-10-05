@@ -1,0 +1,85 @@
+figure {
+    display: inline-block;  /* Keeps the figure block to the width of the image */
+    height: auto;             /* Allows the figure to adjust its height based on the image */
+    margin: 16px 0;         /* Adds some vertical spacing around the figure */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow to the figure */
+    transition: box-shadow 0.3s ease; /* Optional: Smooth transition for hover effect */
+}
+
+figure img {
+    display: block; /* Removes bottom spacing (due to inline nature of img) */
+    max-width: 100%; /* Ensures the image doesn't stretch beyond the figure */
+}
+
+figure:hover {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4); /* Optional: Enhance shadow on hover */
+}
+
+figcaption {
+    text-align: center; /* Center-aligns the caption */
+    font-style: italic; /* Makes the caption italic */
+    margin-top: 8px;    /* Adds some space between the image and the caption */
+} 
+
+figure.full-width {
+    width: 100%;
+}
+:root {
+    --md-primary-fg-color:        #0c0c48;
+    --md-primary-fg-color--light: #0c0c48;
+    --md-primary-fg-color--dark:  #1f2bd4;
+  }
+  
+.role-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #0c0c48;
+    font-size: 0.75rem;
+}
+
+.role-table th,
+.role-table td {
+    border: 1px solid #0c0c48;
+    padding: 0.35rem 0.55rem;
+    text-align: left;
+}
+
+.role-table thead th {
+    background: #0c0c48;
+    color: white;
+    font-weight: 700;
+}
+
+.role-table tbody th {
+    font-weight: 700;
+}
+
+.callout {
+    border-left: 4px solid #00caef;
+    padding-left: 12px;
+    margin: 0.75rem 0;
+}
+
+.md-typeset h1 {
+color: #0c0c48;
+font-size: 1.45rem;
+font-weight: 700;
+line-height: 1.3;
+margin-bottom: 0.25rem;
+padding-bottom: 0.3rem;
+border-bottom: 2px solid #00caef;
+}
+
+.md-typeset h2 {
+color: #0c0c48;
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 1.4;
+margin-top: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 2.5rem;
+    width: auto;
+}
