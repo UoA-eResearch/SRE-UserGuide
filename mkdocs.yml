@@ -7,6 +7,7 @@ nav:
     - Data Storage: Data_Storage.md
   - Using SRE:
     - Getting Started: Getting_started.md
+    - Service Availability & Maintenance: Maintenance.md
     - As a Researcher: As_a_researcher.md
     - As a Data Custodian: As_a_data_custodian.md
     - As a Data Ingress Approver: As_a_data_ingress_approver.md
