@@ -1,14 +1,23 @@
 # Data Storage
 
-Each SRE project includes a set of default storage locations to support secure data management, collaboration and controlled data transfer (ingress and egress). Additional folders and customised folder structures can be configured during project onboarding.
+Each SRE project includes a set of default storage locations to support secure data
+management, collaboration and controlled data transfer (ingress and egress). Additional 
+folders and customised folder structures can be configured during project onboarding.
 
-Storage is divided into <code>personal</code> and <code>project-shared</code> areas. Personal folders are intended for individual use, while project-shared folders enable collaboration across the project team.
+Storage is divided into <code>personal</code> and <code>project-shared</code> areas.
+Folders underneath the <code>personal</code> area are intended for individual use, 
+while folders underneath <code>project-shared</code> enable collaboration across 
+the project team.
 
-The table below provides an overview of the default storage folders available within each project.
+The table below provides an overview of the default storage folders available within 
+each project. 
+Note that you will only see folders your role on the project allows you
+to see. If you don't have access to a folder it will not be visible to you.
 
 <table class="role-table">
 <thead>
 <tr>
+    <th>Area</th>
     <th>Folder name</th>
     <th>Access</th>
     <th>Who can Access</th>
@@ -18,49 +27,60 @@ The table below provides an overview of the default storage folders available wi
 </thead>
 <tbody>
 <tr>
-    <th>project-personal (<code>username-r</code>)</th>
+    <th>personal</th>
+    <th>(<code>username-r</code>)</th>
     <td>Read/Write (own folder)</td>
-    <td>Individual researcher (Data Custodian has full access)</td>
-    <td>Private working space for individual research users</td>
-    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
+    <td>Individual researcher and Data Custodians</td>
+    <td>Private work space for individual research users</td>
+    <td>Data custodians have full access into everybody's private folders.
+        Contains <code>ingress</code> and <code>egress</code> subfolders
+    </td>
 </tr>
 <tr>
-    <th>data-custodian (<code>username-dc</code>)</th>
-    <td>Read/Write</td>
-    <td>Data Custodians</td>
-    <td>Used for direct data ingress/egress and data management</td>
-    <td>Contains <code>ingress</code> and <code>egress</code> subfolders</td>
+    <th>personal</th>
+    <th>(<code>username-r/ingress</code>)</th>
+    <td>Read/Write (own folder)</td>
+    <td>Individual researcher. Data Custodians have read access.</td>
+    <td>Data requested for ingress can be found here once approved.</td>
+    <td>There will be a sub-folder for each data ingress.</td>
 </tr>
 <tr>
-    <th><code>project-rw</code></th>
-    <td>Read/Write</td>
-    <td>All project users</td>
-    <td>Shared working directory for collaboration</td>
-    <td>Files can be edited by all users</td>
+    <th>personal</th>
+    <th>(<code>username-r/egress</code>)</th>
+    <td>Read/Write (own folder)</td>
+    <td>Individual researcher. Data Custodians have read-only access.</td>
+    <td>Data to be requested for egress needs to be placed here.</td>
+    <td>Data will not be deleted as part of egress request processing.</td>
 </tr>
 <tr>
-    <th><code>project-ro</code></th>
-    <td>Read-only</td>
-    <td>All project users (Data Custodian has full access)</td>
-    <td>Stores raw or source data</td>
-    <td>User must copy files out before editing</td>
-</tr>
-<tr>
+    <th><code>project-shared</code></th>
     <th><code>ingress-approver</code></th>
     <td>Read/Review</td>
-    <td>Ingress Approvers (Data Custodian can view)</td>
+    <td>Ingress Approvers (Data Custodian have read-only access)</td>
     <td>Temporary storage for files awaiting ingress approval</td>
-    <td>Files are removed after approval or rejection</td>
+    <td>This folder is only visible to ingress approvers of the project.
+        Files are removed after approval or rejection.
+    </td>
 </tr>
 <tr>
+    <th><code>project-shared</code></th>
     <th><code>egress-approver</code></th>
     <td>Read/Review</td>
-    <td>Egress Approvers (Data Custodian can view)</td>
+    <td>Egress Approvers (Data Custodian have read-only access)</td>
     <td>Temporary storage for files awaiting egress approval</td>
-    <td>Files are removed after approval or rejection</td>
+    <td>This folder is only visible to ingress approvers of the project.
+        Files are removed after approval or rejection
+    </td>
 </tr>
 </tbody>
 </table><br>
+
+<div style="border-left: 4px solid #00caef; padding-left: 12px;">
+    <strong>Note:</strong>
+    A project will very likely have other folders in the project-shared area.
+    For each researcher, access to these folders can be one of read-only, read-write, or no access.
+    A project member in the researcher role will only see folders they have access to.
+</div>
 
 <div style="border-left: 4px solid #00caef; padding-left: 12px;">
     <strong>Warning:</strong>
