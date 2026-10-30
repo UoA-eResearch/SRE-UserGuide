@@ -81,8 +81,7 @@ to see. If you don't have access to a folder it will not be visible to you.
     For each researcher, access to these folders can be one of read-only, read-write, or no access.
     A project member in the researcher role will only see folders they have access to.
 </div>
-
-
+<br>
 <div style="border-left: 4px solid #00caef; padding-left: 12px;">
     <strong>Warning:</strong>
     Data saved outside these folders (e.g., on the VM Desktop or Documents folders) are not persistent and may be lost.
