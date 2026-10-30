@@ -83,3 +83,7 @@ margin-bottom: 0.5rem;
     height: 2.5rem;
     width: auto;
 }
+/* Widen the overall page layout (Material default is 61rem) */
+.md-grid {
+    max-width: 1600px;
+}
