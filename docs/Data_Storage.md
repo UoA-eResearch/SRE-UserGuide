@@ -27,8 +27,8 @@ to see. If you don't have access to a folder it will not be visible to you.
 </thead>
 <tbody>
 <tr>
-    <th>personal</th>
-    <th>(<code>username-r</code>)</th>
+    <td>personal</td>
+    <td>(<code>username-r</code>)</td>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher and Data Custodians</td>
     <td>Private work space for individual research users</td>
@@ -37,24 +37,24 @@ to see. If you don't have access to a folder it will not be visible to you.
     </td>
 </tr>
 <tr>
-    <th>personal</th>
-    <th>(<code>username-r/ingress</code>)</th>
+    <td>personal</td>
+    <td>(<code>username-r/ingress</code>)</td>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher. Data Custodians have read access.</td>
     <td>Data requested for ingress can be found here once approved.</td>
     <td>There will be a sub-folder for each data ingress.</td>
 </tr>
 <tr>
-    <th>personal</th>
-    <th>(<code>username-r/egress</code>)</th>
+    <td>personal</td>
+    <td>(<code>username-r/egress</code>)</td>
     <td>Read/Write (own folder)</td>
     <td>Individual researcher. Data Custodians have read-only access.</td>
     <td>Data to be requested for egress needs to be placed here.</td>
     <td>Data will not be deleted as part of egress request processing.</td>
 </tr>
 <tr>
-    <th><code>project-shared</code></th>
-    <th><code>ingress-approver</code></th>
+    <td>project-shared</td>
+    <td><code>ingress-approver</code></td>
     <td>Read/Review</td>
     <td>Ingress Approvers (Data Custodian have read-only access)</td>
     <td>Temporary storage for files awaiting ingress approval</td>
@@ -63,8 +63,8 @@ to see. If you don't have access to a folder it will not be visible to you.
     </td>
 </tr>
 <tr>
-    <th><code>project-shared</code></th>
-    <th><code>egress-approver</code></th>
+    <td>project-shared</td>
+    <td><code>egress-approver</code></td>
     <td>Read/Review</td>
     <td>Egress Approvers (Data Custodian have read-only access)</td>
     <td>Temporary storage for files awaiting egress approval</td>
