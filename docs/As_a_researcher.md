@@ -68,7 +68,7 @@ As a researcher, use the **Ingress Request** to import files from your computer 
   <li>
     The files will be moved into a timestamped folder within the <code>ingress</code> sub-folder of your personal storage folder (<code>username-r</code>). Access this folder from within the <code>personal</code> storage area.
     <div class="callout">
-      Keep the file in your personal folder or copy/move it into <code>project-rw</code> to share and collaborate with the rest of your team. You can access the <code>project-rw</code> folder within the <code>project-shared</code> storage area.
+      Keep the file in your personal folder or copy/move it into a folder on the <code>project-shared</code> storage area to share and collaborate with the rest of your team. 
     </div>
   </li>
 </ol>
@@ -125,9 +125,9 @@ Use a virtual desktop to access and work with project data on a secure VM.
   </li>
   
   <li>
-    Once the analysis is complete, select <code>project-rw</code> or your personal folder (<code>username-r</code>) and press <strong>Save</strong> to save your output.
+    Once the analysis is complete, select a folder on the <code>project-shared</code> storage area or your personal folder (<code>username-r</code>) on the <code>personal</code> storage area and press <strong>Save</strong> to save your output.
       <div class="callout">
-        As a researcher, you cannot save a file in the <code>project-ro</code> folder.<br>
+        As a researcher, you cannot save data in folders on the <code>project-shared</code> storage area where you have read-only access.<br>
         <strong>Saving your files to the VM's <code>Desktop</code> and <code>Documents</code> folders is not recommended, as VMs are replaceable and the files you save there could be lost.</strong>
       </div>
   </li>

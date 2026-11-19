@@ -65,10 +65,10 @@ Possible project actions include:
 
 <ul>
   <li>
-    Store <strong>source (raw) project data</strong> to the <code>project-ro</code> folder. The content of this folder cannot be edited by other users, but a researcher can make a working copy for analysis. Any shared project data or files that can be modified by all users can be stored in the <code>project-rw</code> folder.
+    Store <strong>source (raw) project data</strong> in a folder on the <code>project-shared</code> storage area where researchers have read-only access. The content of this folder cannot be edited by other users, but a researcher can make a working copy for analysis. Any shared project data or files that can be modified by all users should be stored in a folder on the <code>project-shared</code> storage area where reserachers have read-write access.
   </li>
   <li>
-    Store files that need to be accessed by a specific project member to their <strong>project-personal</strong> folder, usually named <code>[username]-r</code>.
+    Store files that need to be accessed by a specific project member in their personal folder (<code>[username]-r</code>) on the <code>personal</code> storage area.
   </li>
   <li>
     Store files that need to be accessed by a project sub-group to a customised folder, as appropriate.
